@@ -7,7 +7,7 @@
 	{{!-- list of burgers before being eaten --}}
 	<div class="row">
 		<div class="col-md-5 col-md-offset-1">
-			<h3>Ready To Eat</h3>
+			<h3>Order Up!</h3>
 			<div class="panel-panel default"> 
 				<ul class="list-group">
 				{{#each burgers}}
@@ -18,7 +18,7 @@
 							<span class="input-group-btn">
 								<form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
 									<input type="hidden" name="devoured" value="true">
-									<button class="btn btn-default btn-lg" type="submit"> Eat It! </button>
+									<button class="btn btn-default btn-lg" type="submit"> Devour! </button>
 								</form>
 							</span>
 						</div>
@@ -32,8 +32,8 @@
 
 		{{!-- list of burgers after being eaten --}}
 	<div class="row">
-		<div class="col-md-5 col-md-offset-1">
-			<h3>Devoured</h3>
+		<div class="col-md-5">
+			<h3>Devoured!</h3>
 			<div class="panel panel-default">
 				<ul class="list-group">
 				{{#each burgers}}
@@ -66,7 +66,7 @@
 				<textarea class="form-control input-lg" type="text" name="b_name" rows="3"> </textarea>
 			</div>
 
-			<button class="btn btn-default btn-lg" type="submit">Order Up!</button>
+			<button class="btn btn-default btn-lg" type="submit">Place Order</button>
 		</form>
 	</div>
 </div>
