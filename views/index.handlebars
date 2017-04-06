@@ -7,7 +7,8 @@
 	{{!-- burger list before being eaten --}}
 	<div class="row">
 		<div class="col-md-4 col-md-offset-1">
-			<div class="panel-panel default"> Ready
+			<h3>Ready</h3>
+			<div class="panel-panel default"> 
 				<ul class="list-group">
 				{{#each burgers}}
 					{{#unless this.devoured}}
@@ -32,7 +33,8 @@
 		{{!-- burger list after being eaten --}}
 	<div class="row">
 		<div class="col-md-4 col-md-offset-2">
-			<div class="panel panel-default"> Devoured
+			<h3>Devoured</h3>
+			<div class="panel panel-default">
 				<ul class="list-group">
 				{{#each burgers}}
 					{{#if this.devoured}}
