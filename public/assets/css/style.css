@@ -10,10 +10,11 @@ body{
 }
 
 img{
-	height: 100px;
+	height: 200px;
 }
 
 .jumbotron {
 	background-color: #83d255;
+	padding-top: 6px;
 }
 
