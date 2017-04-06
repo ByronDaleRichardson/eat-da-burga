@@ -35,10 +35,10 @@ var orm = {
 		queryString = queryString + col.toString();
 		queryString = queryString + ') ';
 		queryString = queryString + 'VALUES (';
-		queryString = queryString + printQestionMarks(vals.length);
+		queryString = queryString + printQuestionMarks(vals.length);
 		queryString = queryString + ') ';
 
-		connection.query(queryString, vals, function(err, reslut) {
+		connection.query(queryString, vals, function(err, result) {
 			if(err) throw err;
 			cb(result);
 		});
