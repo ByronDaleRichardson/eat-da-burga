@@ -5,8 +5,6 @@ body{
 	background-color: #fda43c;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 14px;
-	line-height: 1;
-	color: #333;
 }
 
 img{
@@ -15,6 +13,6 @@ img{
 
 .jumbotron {
 	background-color: #83d255;
-	padding-margin: 6px;
+	margin-top: 6px;
 }
 
