@@ -39,6 +39,12 @@
 				{{#each burgers}}
 					{{#if this.devoured}}
 					<li class="list-group-item">
+						<span class="input-group-btn">
+							<form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
+								<input type="hidden" name="devoured" value="true">
+								<button class="btn btn-default btn-lg" type="submit"> Re-Order! </button>
+							</form>
+						</span>
 						<p class="lead">{{this.burger_name}} </p>
 					</li>
 					{{/if}}
