@@ -17,12 +17,13 @@ var connection = mysql.createPool({
 }); */
 
 
-connection.getConnection(function(err) {
+connection.getConnection(function(err, result) {
     if (err) {
         console.error('error connecting: ' + err.stack);
         connection.release();
         return;
     }
+    result.connect();
     console.log('connected as id ' + connection.threadId);
 });
 
